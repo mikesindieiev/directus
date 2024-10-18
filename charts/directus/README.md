@@ -57,12 +57,12 @@ helm delete directus-release
 | `tolerations`                | List of node taints to tolerate                                                                                                      | `[]`                      |
 | `affinity`                   | Node/Pod affinities                                                                                                                  | `{}`                      |
 | `extraEnvVars`               | Adds extra environment variables. Refer to [Directus Docs](https://docs.directus.io/configuration/config-options/) for more details. | `{}`                      |
-| `mariadb.enabled`            | Deploys MariaDB server                                                                                                               | `true`                    |
+| `mariadb.enableInstallation`            | Deploys MariaDB server                                                                                                               | `true`                    |
 | `redis.enabled`              | Deploys Redis server                                                                                                                 | `true`                    |
 
 ### External Database
 
-If you want to use an external DB, you need to disable MariaDB by adding `mariadb.enabled: false` and add the necessary Environment Variables according to [Directus Documentation](https://docs.directus.io/self-hosted/config-options.html#database).
+If you want to use an external DB, you need to disable MariaDB by adding `mariadb.enableInstallation: false` and add the necessary Environment Variables according to [Directus Documentation](https://docs.directus.io/self-hosted/config-options.html#database).
 
 These variables can be added by using the following values:
 
